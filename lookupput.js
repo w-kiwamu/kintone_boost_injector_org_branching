@@ -3,7 +3,6 @@
 //kb.event.on('kb.create.load', (event) => {
 kb.event.on('kb.edit.load', (event) => {
  //console.log('あいうえお');
- 
  console.log(event);
  //record['ルックアップ_0'].value = '0001'; // ルックアップフィールドの値
  //record['ルックアップ_0'].lookup = true; // またはrecord['ルックアップ_0'].lookup = 'UPDATE';

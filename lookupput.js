@@ -1,10 +1,8 @@
 (() => {
 "use strict";
-const handler = (event) => {
-//console.log(event);
+kb.event.on('kb.create.load', (event) => {
  alert("kiwamu");
-};
-kb.event.on('kb.view.load', handler);
- 
-kb.event.off('kb.view.load', handler);
+ console.log(event);
+return event;
+});
 })();

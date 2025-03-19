@@ -2,7 +2,7 @@
 "use strict";
 const handler = (event) => {
 //console.log(event);
- alart("kiwamu");
+ alert("kiwamu");
 };
 kb.event.on('kb.view.load', handler);
  

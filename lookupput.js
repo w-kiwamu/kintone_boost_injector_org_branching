@@ -7,6 +7,7 @@ kb.event.on('kb.edit.load', (event) => {
  //record['ルックアップ_0'].lookup = true; // またはrecord['ルックアップ_0'].lookup = 'UPDATE';
  record['branch_ID'].value = '23004'; // ルックアップフィールドの値
  //record['branch_ID'].lookup = true; // またはrecord['branch_ID'].lookup = 'UPDATE';
+ alert('record['branch_ID'].value');
 return event;
 });
 })();

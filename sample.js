@@ -1,8 +1,9 @@
 (() => {
   'use strict';
   kintone.events.on('app.record.create.show', (event) => {
-    alert('kiwamu');
-    //const record = event.record;
+    const record = event.record;
+    alert('あいうえお');
+    console.log('あいうえお');
     //record['Hello'].value = 'こんにちは、kintone!';
     return event;
   });

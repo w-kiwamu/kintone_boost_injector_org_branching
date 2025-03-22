@@ -9,7 +9,7 @@ const pathname = window.location.pathname;
 console.log(pathname.replaceAll("/", "")..replace("asc2test", ""));
  
 console.log('取得したイベントの情報:', event);
-alert('aaaaa');
+//alert('aaaaa');
 
 // 別の変数を使用してイベントを操作
 const myEvent = event;

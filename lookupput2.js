@@ -6,17 +6,17 @@ kb.event.on('kb.create.load', (event) => {
 
 // パス部分（例：/page）
 const pathname = window.location.pathname;
-console.log(pathname.replaceAll("/", ""));
+console.log(pathname.replaceAll("/", "")..replace("asc2test", ""));
  
 console.log('取得したイベントの情報:', event);
-//alert('aaaaa');
+alert('aaaaa');
 
 // 別の変数を使用してイベントを操作
 const myEvent = event;
-myEvent.record['自由記載'].value = 'この文字列で上書き';
+myEvent.record['備考'].value = 'この文字列で上書き';
 
-myEvent.record['branch_ID'].value = '23004'; // ルックアップフィールドの値
-myEvent.record['branch_ID'].lookup = true; // アップデート
+myEvent.record['抽出ID'].value = '23004'; // ルックアップフィールドの値
+myEvent.record['抽出ID'].lookup = true; // アップデート
  
 return event;
 });

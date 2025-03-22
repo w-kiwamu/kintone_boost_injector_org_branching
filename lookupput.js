@@ -1,3 +1,5 @@
+//  https://w-kiwamu.github.io/kintone_boost_injector_org_branching/lookupput.js
+
 (() => {
 "use strict";
 //kb.event.on('kb.create.load', (event) => {

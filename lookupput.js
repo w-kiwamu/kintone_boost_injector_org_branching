@@ -2,8 +2,8 @@
 
 (() => {
 "use strict";
-//kb.event.on('kb.create.load', (event) => {
-kb.event.on('kb.edit.load', (event) => {
+kb.event.on('kb.create.load', (event) => {
+//kb.event.on('kb.edit.load', (event) => {
  console.log(event);
  //alert('aaaaa');
  //record['ルックアップ_0'].value = '0001'; // ルックアップフィールドの値

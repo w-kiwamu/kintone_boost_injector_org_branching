@@ -5,7 +5,7 @@
 kb.event.on('kb.create.load', (event) => {
 
 // パス部分（例：/page）
-const pathname = window.location.pathname;
+const pathname = window.location.pathname.replaceAll("/", "");
 console.log(pathname);
  
 console.log('取得したイベントの情報:', event);

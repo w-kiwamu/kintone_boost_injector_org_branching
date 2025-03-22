@@ -9,11 +9,10 @@ const myEvent = event;
 
 //URLの最後の部分を取得
 const pathname = window.location.pathname;
- 
-//myEvent.record['備考'].value = 'この文字列で書き';
 
-myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace("asc2test", ""); // ルックアップフィールドの値
-myEvent.record['抽出ID'].lookup = true; // アップデート
+//ルックアップフィールド（アプリコードが↓では　抽出ID）にBoost! Injector用URLの最後にあるフォルダ名から、"asc2test"を削除した文字を設定。そうなるようにフォルダ名と抽出IDが一致するよう事前にkintoneアプリを設計する必要がある。
+myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace("asc2test", ""); // ルックアップフィールドの値を決める
+myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをがInjectorの画面上でアップデート
  
 return event;
 });

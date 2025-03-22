@@ -1,3 +1,5 @@
+//  https://w-kiwamu.github.io/kintone_boost_injector_org_branching/sample.js
+
 (() => {
   'use strict';
   kintone.events.on('app.record.create.show', (event) => {

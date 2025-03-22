@@ -15,7 +15,7 @@ alert('aaaaa');
 const myEvent = event;
 myEvent.record['備考'].value = 'この文字列で上書き';
 
-myEvent.record['抽出ID'].value = '23004'; // ルックアップフィールドの値
+myEvent.record['抽出ID'].value = pathname.replaceAll("/", "")..replace("asc2test", ""); // ルックアップフィールドの値
 myEvent.record['抽出ID'].lookup = true; // アップデート
  
 return event;

@@ -4,7 +4,7 @@
 "use strict";
 kb.event.on('kb.create.load', (event) => {
 console.log(event);
-const appId = kb.app.getAppId();
+const appId = kb.app.AppId();
 console.log(appId); // アプリIDをコンソールに出力
   
 // 別の変数を使用してイベントを操作

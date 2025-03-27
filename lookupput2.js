@@ -5,7 +5,7 @@
 kb.event.on('kb.create.load', (event) => {
 console.log(event);
 //const appId = kb.app.AppId();
-console.log(kb); // アプリIDをコンソールに出力
+console.log(kb.operator.domain); // アプリIDをコンソールに出力
   
 // 別の変数を使用してイベントを操作
 const myEvent = event;

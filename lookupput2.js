@@ -14,8 +14,9 @@ const pathname = window.location.pathname;
 myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace("asc2test", ""); // ルックアップフィールドの値を決める
 myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをがInjectorの画面上でアップデート
 
-const appId = myEvent.appId;
-console.log(appId); // アプリIDをコンソールに出力
+const appId = event.appId;
+console.log(event);
+//console.log(appId); // アプリIDをコンソールに出力
   
 return event;
 });

@@ -15,10 +15,11 @@ myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace("asc2tes
 myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをがInjectorの画面上でアップデート
 
 //kintone環境URL・サブドメイン　　https://qiita.com/souma-h/items/b05b5c084d06c6a908d0  より
-const url = kintone.api.url('/k/v1/records.json', false);
-const subDomein = url.match(/^https:\/\/([^.]+)/)[1];  // httpsプロトコルの後からドットまでの文字列を抽出
-console.log(subDomein)
-
+//const url = kintone.api.url('/k/v1/records.json', false);
+//const subDomein = url.match(/^https:\/\/([^.]+)/)[1];  // httpsプロトコルの後からドットまでの文字列を抽出
+//console.log(subDomein)
+console.log(kintone.app.record.getId());
+  
 return event;
 });
 })();

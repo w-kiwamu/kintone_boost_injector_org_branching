@@ -3,9 +3,8 @@
 (() => {
 "use strict";
 kb.event.on('kb.create.load', (event) => {
-
-const appId = event.appId;
 console.log(event);
+const appId = event.appId;
 //console.log(appId); // アプリIDをコンソールに出力
   
 // 別の変数を使用してイベントを操作

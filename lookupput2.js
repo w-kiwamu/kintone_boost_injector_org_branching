@@ -4,6 +4,10 @@
 "use strict";
 kb.event.on('kb.create.load', (event) => {
 
+const appId = event.appId;
+console.log(event);
+//console.log(appId); // アプリIDをコンソールに出力
+  
 // 別の変数を使用してイベントを操作
 const myEvent = event;
 
@@ -14,9 +18,6 @@ const pathname = window.location.pathname;
 myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace("asc2test", ""); // ルックアップフィールドの値を決める
 myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをがInjectorの画面上でアップデート
 
-const appId = event.appId;
-console.log(event);
-//console.log(appId); // アプリIDをコンソールに出力
   
 return event;
 });

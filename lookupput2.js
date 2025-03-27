@@ -18,7 +18,7 @@ myEvent.record['抽出ID'].lookup = true; // ルックアップフィールド�
 //const url = kintone.api.url('/k/v1/records.json', false);
 //const subDomein = url.match(/^https:\/\/([^.]+)/)[1];  // httpsプロトコルの後からドットまでの文字列を抽出
 //console.log(subDomein)
-console.log(kintone.app.record.getId());
+//console.log(kintone.app.record.getId());
   
 return event;
 });

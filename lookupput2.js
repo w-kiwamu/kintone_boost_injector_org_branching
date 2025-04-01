@@ -4,9 +4,13 @@
 "use strict";
 kb.event.on('kb.create.load', (event) => {
 console.log(kb.operator.domain); // サブドメインをコンソールに出力
-  
+
+console.log(event); // マイイベントを表示
+
 // 別の変数を使用してイベントを操作
 const myEvent = event;
+  
+console.log(myEvent); // マイイベントを表示
 
 //URLの最後の部分を取得
 const pathname = window.location.pathname;

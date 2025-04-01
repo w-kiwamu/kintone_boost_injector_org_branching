@@ -17,8 +17,8 @@ const pathname = window.location.pathname;
 
 //ルックアップフィールド（アプリコードが↓では　抽出ID）にBoost! Injector用URLの最後にあるフォルダ名から、"asc2test"を削除した文字を設定。そうなるようにフォルダ名と抽出IDが一致するよう事前にkintoneアプリを設計する必要がある。
 myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace("asc2test", ""); // ルックアップフィールドの値を決める
-myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをがInjectorの画面上でアップデート
-
+myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをInjectorの画面上でアップデート
+myEvent.record['抽出ID'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
   
 return event;
 });

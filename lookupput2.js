@@ -5,7 +5,7 @@
 kb.event.on('kb.create.load', (event) => {
 console.log(kb.operator.domain); // サブドメインをコンソールに出力
 
-console.log(event); // マイイベントを表示
+console.log(kb); // kintone_boosterオブジェクトを表示
 
 // 別の変数を使用してイベントを操作
 const myEvent = event;

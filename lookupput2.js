@@ -21,7 +21,8 @@ myEvent.record['抽出ID'].lookup = true; // ルックアップフィールド�
 myEvent.record['抽出ID'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
 
 myEvent.record['主キー'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
-
+kb.injector.app.fields['主キー'].hideExpression = true; // フィールドをInjectorの画面上で非表示にする
+  
 return event;
 });
 })();

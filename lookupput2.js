@@ -23,6 +23,8 @@ myEvent.record['抽出ID'].disabled = true; // ルックアップフィールド
 
 
 //kb.injector.app.fields['事業所'].hideExpression = true; // フィールドをInjectorの画面上で非表示にする
+kb.injector.setFieldShown(fieldCode, false); // フィールドを非表示にする
+
   
 myEvent.record['主キー'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
 //kb.injector.app.fields['主キー'].hideExpression = true; // フィールドをInjectorの画面上で非表示にする

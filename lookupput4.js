@@ -26,6 +26,8 @@ myEvent.record['抽出ID'].disabled = true; // ルックアップフィールド
 
 
 //ルックアップフィールド（アプリコードが↓では　最終更新アカウント情報）にBoost! Injector用URLの最後にあるフォルダ名から、subdomain と-を削除した文字を-で分割して左側を抽出IDとして設定。そうなるようにフォルダ名と抽出IDが一致するよう事前にkintoneアプリを設計する必要がある。
+console.log(pathname); // マイイベントを表示
+console.log(subdomain); // マイイベントを表示
 console.log(pathname.replaceAll("/", "")); // マイイベントを表示
 console.log(pathname.replaceAll("/", "").replace(subdomain + "-", "")); // マイイベントを表示
 console.log(pathname.replaceAll("/", "").replace(subdomain + "-", "").split('-')[1]); // ルックアップフィールドの値を決める

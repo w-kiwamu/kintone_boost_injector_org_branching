@@ -22,7 +22,7 @@ console.log(subdomain); // サブドメインをコンソールに出力
 //ルックアップフィールド（アプリコードが↓では　抽出ID）にBoost! Injector用URLの最後にあるフォルダ名から、subdomain と-を削除した文字を-で分割して左側を抽出IDとして設定。そうなるようにフォルダ名と抽出IDが一致するよう事前にkintoneアプリを設計する必要がある。
 myEvent.record['抽出ID'].value = pathname.replaceAll("/", "").replace(subdomain + "-", "").split('-')[0]; // ルックアップフィールドの値を決める
 myEvent.record['抽出ID'].lookup = true; // ルックアップフィールドをInjectorの画面上でアップデート
-myEvent.record['抽出ID'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
+//myEvent.record['抽出ID'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
 
 
 //ルックアップフィールド（アプリコードが↓では　最終更新アカウント情報）にBoost! Injector用URLの最後にあるフォルダ名から、subdomain と-を削除した文字を-で分割して左側を抽出IDとして設定。そうなるようにフォルダ名と抽出IDが一致するよう事前にkintoneアプリを設計する必要がある。
@@ -77,7 +77,7 @@ console.log(pathname.replaceAll("/", "")); // マイイベントを表示
 console.log(pathname.replaceAll("/", "").replace(subdomain + "-", "")); // マイイベントを表示
 console.log(pathname.replaceAll("/", "").replace(subdomain + "-", "").split('-')[1]); // ルックアップフィールドの値を決める
 myEvent.record['最終更新アカウント情報'].value = pathname.replaceAll("/", "").replace(subdomain + "-", "").split('-')[1]; // ルックアップフィールドの値を決める
-myEvent.record['最終更新アカウント情報'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
+//myEvent.record['最終更新アカウント情報'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
 
 
 //kb.injector.app.fields['事業所'].hideExpression = true; // フィールドをInjectorの画面上で非表示にする

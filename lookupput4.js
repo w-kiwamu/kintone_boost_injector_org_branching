@@ -33,7 +33,7 @@ console.log(pathname.replaceAll("/", "").replace(subdomain + "-", "")); // マ�
 console.log(pathname.replaceAll("/", "").replace(subdomain + "-", "").split('-')[1]); // ルックアップフィールドの値を決める
 myEvent.record['最終更新アカウント情報'].value = pathname.replaceAll("/", "").replace(subdomain + "-", "").split('-')[1]; // ルックアップフィールドの値を決める
 myEvent.record['最終更新アカウント情報'].lookup = true; // ルックアップフィールドをInjectorの画面上でアップデート
-myEvent.record['最終更新アカウント情報'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
+//myEvent.record['最終更新アカウント情報'].disabled = true; // ルックアップフィールドをInjectorの画面上で編集不可にする
 
 
 //kb.injector.app.fields['事業所'].hideExpression = true; // フィールドをInjectorの画面上で非表示にする
